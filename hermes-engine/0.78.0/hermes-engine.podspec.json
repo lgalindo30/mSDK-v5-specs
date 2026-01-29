@@ -1,0 +1,60 @@
+{
+  "name": "hermes-engine",
+  "version": "0.78.0",
+  "summary": "Hermes is a small and lightweight JavaScript engine optimized for running React Native.",
+  "description": "Hermes is a JavaScript engine optimized for fast start-up of React Native apps. It features ahead-of-time static optimization and compact bytecode.",
+  "homepage": "https://hermesengine.dev",
+  "license": "MIT",
+  "authors": "Facebook",
+  "source": {
+    "http": "file:///Users/pac-mobile/builds/iBqgHQYQ6/0/development/application/integration/mobile/msdk-v5/sdk-pod/hermes-engine/hermes-ios-0.78.0-debug.tar.gz"
+  },
+  "platforms": {
+    "osx": "10.13",
+    "ios": "15.1",
+    "visionos": "1.0",
+    "tvos": "15.1"
+  },
+  "preserve_paths": "**/*.*",
+  "source_files": "",
+  "pod_target_xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "CLANG_CXX_LIBRARY": "compiler-default",
+    "GCC_WARN_INHIBIT_ALL_WARNINGS": "YES"
+  },
+  "ios": {
+    "vendored_frameworks": "destroot/Library/Frameworks/ios/hermes.framework"
+  },
+  "tvos": {
+    "vendored_frameworks": "destroot/Library/Frameworks/tvos/hermes.framework"
+  },
+  "osx": {
+    "vendored_frameworks": "destroot/Library/Frameworks/macosx/hermes.framework"
+  },
+  "visionos": {
+    "vendored_frameworks": "destroot/Library/Frameworks/xros/hermes.framework"
+  },
+  "subspecs": [
+    {
+      "name": "Pre-built",
+      "preserve_paths": [
+        "destroot/bin/*",
+        "**/*.{h,c,cpp}"
+      ],
+      "source_files": "destroot/include/hermes/**/*.h",
+      "header_mappings_dir": "destroot/include",
+      "ios": {
+        "vendored_frameworks": "destroot/Library/Frameworks/universal/hermes.xcframework"
+      },
+      "visionos": {
+        "vendored_frameworks": "destroot/Library/Frameworks/universal/hermes.xcframework"
+      },
+      "tvos": {
+        "vendored_frameworks": "destroot/Library/Frameworks/universal/hermes.xcframework"
+      },
+      "osx": {
+        "vendored_frameworks": "destroot/Library/Frameworks/macosx/hermes.framework"
+      }
+    }
+  ]
+}
