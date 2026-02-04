@@ -7,7 +7,7 @@
   "license": "MIT",
   "authors": "Facebook",
   "source": {
-    "http": "file:///Users/pac-mobile/builds/iBqgHQYQ6/0/development/application/integration/mobile/msdk-v5/sdk-pod/hermes-engine/hermes-ios-0.78.0-debug.tar.gz"
+    "http": "https://repo1.maven.org/maven2/com/facebook/react/react-native-artifacts/0.78.0/react-native-artifacts-0.78.0-hermes-ios-debug.tar.gz"
   },
   "platforms": {
     "osx": "10.13",
