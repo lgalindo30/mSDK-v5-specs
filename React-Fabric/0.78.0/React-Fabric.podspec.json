@@ -142,7 +142,7 @@
           ],
           "header_dir": "react/renderer/components/view",
           "pod_target_xcconfig": {
-            "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig/react/config\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig\""
+            "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig/react/config\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/react/renderer/components/view/platform/cxx\""
           },
           "header_mappings_dir": "packages/react-native/ReactCommon/react/renderer/components/view"
         },
