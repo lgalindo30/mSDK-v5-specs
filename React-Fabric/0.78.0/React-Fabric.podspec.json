@@ -319,5 +319,6 @@
         "GCC_WARN_PEDANTIC": "YES"
       }
     }
-  ]
+  ],
+  "prepare_command": "SRC=\"packages/react-native/ReactCommon/react/renderer/components/view/platform/cxx/react/renderer/components/view\" && DST=\"packages/react-native/ReactCommon/react/renderer/components/view\" && mkdir -p \"$DST\" && if [ -d \"$SRC\" ]; then cp -f \"$SRC\"/HostPlatform*.h \"$DST\"/; fi"
 }
