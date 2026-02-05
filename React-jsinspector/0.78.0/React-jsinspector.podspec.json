@@ -12,7 +12,7 @@
     "git": "https://github.com/facebook/react-native.git",
     "tag": "v0.78.0"
   },
-  "source_files": "packages/react-native/ReactCommon/jsinspector-modern/*.{cpp,h}",
+  "source_files": "packages/react-native/ReactCommon/jsinspector-modern/*.{cpp,h,def}",
   "header_dir": "jsinspector-modern",
   "module_name": "jsinspector_modern",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
