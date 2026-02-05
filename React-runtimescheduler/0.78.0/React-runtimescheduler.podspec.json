@@ -18,7 +18,7 @@
   "exclude_files": "packages/react-native/ReactCommon/react/renderer/runtimescheduler/tests",
   "pod_target_xcconfig": {
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/boost\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\""
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/Headers/Public/React-performancetimeline\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-performancetimeline/React_performancetimeline.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\""
   },
   "dependencies": {
     "React-runtimeexecutor": [],
@@ -37,5 +37,7 @@
     "React-rendererconsistency": [],
     "React-debug": [],
     "hermes-engine": []
-  }
+  },
+  "module_name": "React_runtimescheduler",
+  "header_mappings_dir": "packages/react-native/ReactCommon"
 }
