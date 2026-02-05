@@ -53,5 +53,6 @@
     "React-Fabric": [],
     "React-rendererdebug": [],
     "hermes-engine": []
-  }
+  },
+  "header_mappings_dir": "packages/react-native/ReactCommon/react/renderer/components/image"
 }
