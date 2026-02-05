@@ -12,7 +12,7 @@
     "git": "https://github.com/facebook/react-native.git",
     "tag": "v0.78.0"
   },
-  "public_header_files": "packages/react-native/ReactCommon/hermes/executor/HermesExecutorFactory.h",
+  "public_header_files": "packages/react-native/ReactCommon/hermes/executor/*.{h}",
   "source_files": [
     "packages/react-native/ReactCommon/hermes/executor/*.{cpp,h}",
     "packages/react-native/ReactCommon/hermes/inspector-modern/chrome/*.{cpp,h}",
@@ -51,5 +51,6 @@
     "React-runtimeexecutor": []
   },
   "module_name": "React_hermes",
-  "static_framework": true
+  "static_framework": true,
+  "header_mappings_dir": "packages/react-native/ReactCommon/hermes/executor"
 }
