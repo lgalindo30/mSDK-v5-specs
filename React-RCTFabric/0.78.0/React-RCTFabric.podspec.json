@@ -62,5 +62,6 @@
       "source_files": "Tests/**/*.{mm}",
       "frameworks": "XCTest"
     }
-  ]
+  ],
+  "public_header_files": "Fabric/**/*.h"
 }
