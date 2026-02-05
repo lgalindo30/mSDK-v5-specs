@@ -30,5 +30,5 @@
     ]
   },
   "module_name": "React_performancetimeline",
-  "header_mappings_dir": "packages/react-native/ReactCommon"
+  "header_mappings_dir": "packages/react-native/ReactCommon/react/performance/timeline"
 }

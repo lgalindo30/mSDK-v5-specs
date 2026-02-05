@@ -39,5 +39,5 @@
     "hermes-engine": []
   },
   "module_name": "React_runtimescheduler",
-  "header_mappings_dir": "packages/react-native/ReactCommon"
+  "header_mappings_dir": "packages/react-native/ReactCommon/react/renderer/runtimescheduler"
 }
