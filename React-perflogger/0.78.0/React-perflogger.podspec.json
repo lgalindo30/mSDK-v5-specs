@@ -13,8 +13,8 @@
     "tag": "v0.78.0"
   },
   "source_files": [
-    "reactperflogger/*.{cpp,h}",
-    "fusebox/*.{cpp,h}"
+    "packages/react-native/ReactCommon/reactperflogger/reactperflogger/*.{cpp,h}",
+    "packages/react-native/ReactCommon/reactperflogger/fusebox/*.{cpp,h}"
   ],
   "header_dir": "reactperflogger",
   "pod_target_xcconfig": {
