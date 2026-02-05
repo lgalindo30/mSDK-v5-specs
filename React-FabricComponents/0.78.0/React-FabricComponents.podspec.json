@@ -17,7 +17,7 @@
     "USE_HEADERMAP": "YES",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "DEFINES_MODULE": "YES",
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_TARGET_SRCROOT)\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fast_float/include\" \"$(PODS_ROOT)/fmt/include\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/imagemanager/platform/ios\""
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_TARGET_SRCROOT)\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fast_float/include\" \"$(PODS_ROOT)/fmt/include\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/imagemanager/platform/ios\" \"$(PODS_ROOT)/Headers/Public/React-FabricImage\" \"$(PODS_ROOT)/Headers/Public/React-FabricImage/react/renderer/components/image\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\""
   },
   "dependencies": {
     "RCT-Folly/Fabric": [
@@ -47,9 +47,9 @@
     "React-rendererdebug": [],
     "React-graphics": [],
     "React-Fabric": [],
-    "hermes-engine": []
+    "hermes-engine": [],
+    "React-FabricImage": []
   },
-  
   "subspecs": [
     {
       "name": "components",
@@ -171,14 +171,13 @@
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": [
-         "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/ios/**/*.{m,mm,cpp,h}",
+        "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/ios/**/*.{m,mm,cpp,h}",
         "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/*.{m,mm,cpp,h}"
-  ],
+      ],
       "exclude_files": [
-          "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/tests",
+        "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/tests",
         "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/android",
-        "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/cxx"      
-  
+        "packages/react-native/ReactCommon/react/renderer/textlayoutmanager/platform/cxx"
       ],
       "header_dir": "react/renderer/textlayoutmanager"
     }
