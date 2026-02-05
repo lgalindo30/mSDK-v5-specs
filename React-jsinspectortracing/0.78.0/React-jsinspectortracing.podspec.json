@@ -13,13 +13,13 @@
     "tag": "v0.78.0"
   },
   "source_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{cpp,h}",
-  "header_dir": "jsinspector-modern",
+  "header_dir": "jsinspector-modern/tracing",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/jsinspector-modern\"",
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/jsinspector-modern/tracing\"",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "DEFINES_MODULE": "YES",
-    "PUBLIC_HEADERS_FOLDER_PATH": "jsinspector_moderntracing.framework/Headers/jsinspector-modern"
+    "PUBLIC_HEADERS_FOLDER_PATH": "jsinspector_moderntracing.framework/Headers/jsinspector-modern/tracing"
   },
   "dependencies": {
     "RCT-Folly": [
@@ -27,6 +27,6 @@
     ]
   },
   "module_name": "jsinspector_moderntracing",
-  "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern",
+  "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern/tracing",
   "static_framework": true
 }
