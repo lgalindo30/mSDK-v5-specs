@@ -51,5 +51,6 @@
     "React-runtimeexecutor": []
   },
   "header_mappings_dir": "packages/react-native/ReactCommon/hermes/executor",
-  "module_name": "React_hermes"
+  "module_name": "React_hermes",
+  "static_framework": true
 }
