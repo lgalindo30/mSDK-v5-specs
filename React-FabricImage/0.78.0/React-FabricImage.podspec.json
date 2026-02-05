@@ -13,7 +13,7 @@
     "tag": "v0.78.0"
   },
   "source_files": "packages/react-native/ReactCommon/react/renderer/components/image/**/*.{m,mm,cpp,h}",
-  "exclude_files": "react/renderer/components/image/tests",
+  "exclude_files": "packages/react-native/ReactCommon/react/renderer/components/image/tests",
   "header_dir": "react/renderer/components/image",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
   "pod_target_xcconfig": {
