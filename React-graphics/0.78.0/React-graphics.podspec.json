@@ -14,8 +14,8 @@
   },
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation",
   "source_files": [
-    "*.{m,mm,cpp,h}",
-    "platform/ios/**/*.{m,mm,cpp,h}"
+    "packages/react-native/ReactCommon/react/renderer/graphics/**/*.{m,mm,cpp,h}",
+    "packages/react-native/ReactCommon/react/renderer/graphics/platform/ios/**/*.{m,mm,cpp,h}"
   ],
   "header_dir": "react/renderer/graphics",
   "frameworks": "UIKit",
@@ -41,5 +41,11 @@
       "11.0.2"
     ],
     "hermes-engine": []
-  }
+  },
+  "exclude_files": [
+    "packages/react-native/ReactCommon/react/renderer/graphics/tests",
+    "packages/react-native/ReactCommon/react/renderer/graphics/platform/android",
+    "packages/react-native/ReactCommon/react/renderer/graphics/platform/cxx",
+    "packages/react-native/ReactCommon/react/renderer/graphics/platform/windows"
+  ]
 }
