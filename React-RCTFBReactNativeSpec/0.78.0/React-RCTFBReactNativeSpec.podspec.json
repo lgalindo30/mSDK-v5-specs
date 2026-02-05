@@ -31,13 +31,5 @@
     "React-NativeModulesApple": [],
     "ReactCommon": [],
     "hermes-engine": []
-  },
-  "script_phases": [
-    {
-      "name": "[RN]Check FBReactNativeSpec",
-      "execution_position": "before_compile",
-      "always_out_of_date": "1",
-      "script": "echo \"Checking whether Codegen has run...\"\nfbReactNativeSpecPath=\"$REACT_NATIVE_PATH/React/FBReactNativeSpec\"\n\nif [[ ! -d \"$fbReactNativeSpecPath\" ]]; then\n  echo 'error: Codegen did not run properly in your project. Please reinstall cocoapods with `bundle exec pod install`.'\n  exit 1\nfi\n"
-    }
-  ]
+  }
 }
