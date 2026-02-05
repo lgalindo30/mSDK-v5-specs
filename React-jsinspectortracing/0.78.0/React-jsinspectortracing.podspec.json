@@ -27,5 +27,6 @@
     ]
   },
   "module_name": "jsinspector_moderntracing",
-  "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern"
+  "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern",
+  "static_framework": true
 }
