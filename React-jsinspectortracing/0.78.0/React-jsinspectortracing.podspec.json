@@ -29,5 +29,12 @@
   "module_name": "jsinspector_moderntracing",
   "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern/tracing",
   "static_framework": true,
-  "public_header_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{h}"
+  "public_header_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{h}",
+  "script_phases": [
+    {
+      "name": "Copy jsinspector-modern tracing headers",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-jsinspectortracing/packages/react-native/ReactCommon/jsinspector-modern/tracing\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/jsinspector-modern/tracing\"\nmkdir -p \"$DST_ROOT\"\nif [ -d \"$SRC_ROOT\" ]; then cp -f \"$SRC_ROOT\"/*.h \"$DST_ROOT\"/; fi",
+      "execution_position": "before_compile"
+    }
+  ]
 }
