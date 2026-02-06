@@ -13,7 +13,7 @@
     "tag": "v0.78.0"
   },
   "source_files": [
-    "Fabric/**/*.{c,h,m,mm,S,cpp}",
+    "React/Fabric/**/*.{c,h,m,mm,S,cpp}",
     "RCTFabricComponentsPlugins.h",
     "RCTViewComponentView.h"
   ],
@@ -68,9 +68,9 @@
     }
   ],
   "public_header_files": [
-    "Fabric/**/*.h",
+    "React/Fabric/**/*.h",
     "RCTFabricComponentsPlugins.h",
     "RCTViewComponentView.h"
   ],
-  "prepare_command": "SRC=\"Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi && SRC_VIEW=\"Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h\" && DST_VIEW=\"RCTViewComponentView.h\" && if [ -f \"$SRC_VIEW\" ]; then cp -f \"$SRC_VIEW\" \"$DST_VIEW\"; fi"
+  "prepare_command": "SRC=\"React/Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi && SRC_VIEW=\"React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h\" && DST_VIEW=\"RCTViewComponentView.h\" && if [ -f \"$SRC_VIEW\" ]; then cp -f \"$SRC_VIEW\" \"$DST_VIEW\"; fi"
 }
