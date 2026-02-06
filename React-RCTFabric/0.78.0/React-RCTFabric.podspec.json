@@ -65,7 +65,7 @@
   ],
   "public_header_files": [
     "Fabric/**/*.h",
-    "RCTFabricComponentsPlugins.h"
+    "React/RCTFabricComponentsPlugins.h"
   ],
-  "prepare_command": "SRC=\"Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi"
+  "prepare_command": "SRC=\"Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST_DIR=\"React\" && DST=\"$DST_DIR/RCTFabricComponentsPlugins.h\" && mkdir -p \"$DST_DIR\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi"
 }
