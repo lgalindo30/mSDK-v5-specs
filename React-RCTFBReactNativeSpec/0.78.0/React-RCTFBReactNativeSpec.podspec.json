@@ -33,5 +33,12 @@
     "hermes-engine": []
   },
   "public_header_files": "React/FBReactNativeSpec/FBReactNativeSpec/**/*.h",
-  "header_mappings_dir": "React/FBReactNativeSpec"
+  "header_mappings_dir": "React/FBReactNativeSpec",
+  "script_phases": [
+    {
+      "name": "Copy FBReactNativeSpec public headers",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFBReactNativeSpec/React/FBReactNativeSpec/FBReactNativeSpec\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"\nmkdir -p \"$DST_ROOT\"\nif [ -d \"$SRC_ROOT\" ]; then cp -f \"$SRC_ROOT\"/*.h \"$DST_ROOT\"/; fi",
+      "execution_position": "before_compile"
+    }
+  ]
 }
