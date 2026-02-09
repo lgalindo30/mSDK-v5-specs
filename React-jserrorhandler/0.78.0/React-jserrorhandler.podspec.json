@@ -14,8 +14,8 @@
   },
   "header_dir": "jserrorhandler",
   "source_files": [
-    "JsErrorHandler.{cpp,h}",
-    "StackTraceParser.{cpp,h}"
+    "packages/react-native/ReactCommon/jserrorhandler/JsErrorHandler.{cpp,h}",
+    "packages/react-native/ReactCommon/jserrorhandler/StackTraceParser.{cpp,h}"
   ],
   "pod_target_xcconfig": {
     "USE_HEADERMAP": "YES",
@@ -34,5 +34,6 @@
     "React-featureflags": [],
     "React-debug": [],
     "hermes-engine": []
-  }
+  },
+  "header_mappings_dir": "packages/react-native/ReactCommon"
 }
