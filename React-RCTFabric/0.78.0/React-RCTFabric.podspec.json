@@ -13,7 +13,7 @@
     "tag": "v0.78.0"
   },
   "source_files": [
-    "React/Fabric/**/*.{c,h,m,mm,S,cpp}",
+    "packages/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}",
     "RCTFabricComponentsPlugins.h",
     "RCTViewComponentView.h"
   ],
@@ -68,15 +68,15 @@
     }
   ],
   "public_header_files": [
-    "React/Fabric/**/*.h",
+    "packages/react-native/React/Fabric/**/*.h",
     "RCTFabricComponentsPlugins.h",
     "RCTViewComponentView.h"
   ],
-  "prepare_command": "SRC=\"React/Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi && SRC_VIEW=\"React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h\" && DST_VIEW=\"RCTViewComponentView.h\" && if [ -f \"$SRC_VIEW\" ]; then cp -f \"$SRC_VIEW\" \"$DST_VIEW\"; fi && PUBLIC_HEADERS=\"../Headers/Public/React\" && mkdir -p \"$PUBLIC_HEADERS\" && if [ -f \"$DST\" ]; then cp -f \"$DST\" \"$PUBLIC_HEADERS/RCTFabricComponentsPlugins.h\"; fi && if [ -f \"$DST_VIEW\" ]; then cp -f \"$DST_VIEW\" \"$PUBLIC_HEADERS/RCTViewComponentView.h\"; fi",
+  "prepare_command": "SRC=\"packages/react-native/React/Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi && SRC_VIEW=\"packages/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h\" && DST_VIEW=\"RCTViewComponentView.h\" && if [ -f \"$SRC_VIEW\" ]; then cp -f \"$SRC_VIEW\" \"$DST_VIEW\"; fi && PUBLIC_HEADERS=\"../Headers/Public/React\" && mkdir -p \"$PUBLIC_HEADERS\" && if [ -f \"$DST\" ]; then cp -f \"$DST\" \"$PUBLIC_HEADERS/RCTFabricComponentsPlugins.h\"; fi && if [ -f \"$DST_VIEW\" ]; then cp -f \"$DST_VIEW\" \"$PUBLIC_HEADERS/RCTViewComponentView.h\"; fi",
   "script_phases": [
     {
       "name": "Copy React Fabric public headers",
-      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFabric/React/Fabric/Mounting/ComponentViews\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/React\"\nmkdir -p \"$DST_ROOT\"\nif [ -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" ]; then cp -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" \"$DST_ROOT/RCTFabricComponentsPlugins.h\"; fi\nif [ -f \"$SRC_ROOT/View/RCTViewComponentView.h\" ]; then cp -f \"$SRC_ROOT/View/RCTViewComponentView.h\" \"$DST_ROOT/RCTViewComponentView.h\"; fi",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFabric/packages/react-native/React/Fabric/Mounting/ComponentViews\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/React\"\nmkdir -p \"$DST_ROOT\"\nif [ -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" ]; then cp -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" \"$DST_ROOT/RCTFabricComponentsPlugins.h\"; fi\nif [ -f \"$SRC_ROOT/View/RCTViewComponentView.h\" ]; then cp -f \"$SRC_ROOT/View/RCTViewComponentView.h\" \"$DST_ROOT/RCTViewComponentView.h\"; fi",
       "execution_position": "before_compile"
     }
   ]
