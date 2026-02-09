@@ -21,7 +21,7 @@
   "frameworks": "UIKit",
   "pod_target_xcconfig": {
     "USE_HEADERMAP": "NO",
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/Headers/Public/React-Fabric\" \"$(PODS_ROOT)/Headers/Public/React-Fabric/react/renderer\" \"$(PODS_ROOT)/Headers/Public/React\"",
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/Headers/Public/React-Fabric\" \"$(PODS_ROOT)/Headers/Public/React-Fabric/react/renderer\" \"$(PODS_ROOT)/Headers/Public/React-Fabric/react/renderer/core\" \"$(PODS_ROOT)/Headers/Public/React\"",
     "DEFINES_MODULE": "YES",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20"
   },
