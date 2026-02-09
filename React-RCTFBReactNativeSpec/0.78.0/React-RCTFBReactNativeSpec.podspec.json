@@ -29,7 +29,9 @@
     "React-Core": [],
     "React-NativeModulesApple": [],
     "ReactCommon": [],
-    "hermes-engine": []
+    "hermes-engine": [],
+    "ReactCommon/turbomodule/core": [],
+    "ReactCommon/turbomodule/bridging": []
   },
   "public_header_files": "React/FBReactNativeSpec/FBReactNativeSpec/**/*.h",
   "header_mappings_dir": "React/FBReactNativeSpec",
