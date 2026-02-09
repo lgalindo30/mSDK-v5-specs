@@ -31,7 +31,9 @@
     "ReactCommon": [],
     "hermes-engine": [],
     "ReactCommon/turbomodule/core": [],
-    "ReactCommon/turbomodule/bridging": []
+    "ReactCommon/turbomodule/bridging": [],
+    "React-cxxreact": [],
+    "React-logger": []
   },
   "public_header_files": "React/FBReactNativeSpec/FBReactNativeSpec/**/*.h",
   "header_mappings_dir": "React/FBReactNativeSpec",

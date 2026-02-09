@@ -31,6 +31,7 @@
   "header_mappings_dir": "packages/react-native/ReactCommon",
   "header_mappings_dir": "packages/react-native/ReactCommon",
   "header_mappings_dir": "packages/react-native/ReactCommon",
+  "header_mappings_dir": "packages/react-native/ReactCommon",
   "pod_target_xcconfig": {
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTFBReactNativeSpec/React_RCTFBReactNativeSpec.framework/Headers\"",
