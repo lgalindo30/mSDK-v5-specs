@@ -13,16 +13,16 @@
     "tag": "v0.78.0"
   },
   "source_files": [
-    "*.{cpp,h}",
-    "nativeviewconfig/*.{cpp,h}"
+    "packages/react-native/ReactCommon/react/runtime/*.{cpp,h}",
+    "packages/react-native/ReactCommon/react/runtime/nativeviewconfig/*.{cpp,h}"
   ],
   "exclude_files": [
-    "iostests/*",
-    "tests/**/*.{cpp,h}"
+    "packages/react-native/ReactCommon/react/runtime/iostests/*",
+    "packages/react-native/ReactCommon/react/runtime/tests/**/*.{cpp,h}"
   ],
   "header_dir": "react/runtime",
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/React-Core\" \"${PODS_TARGET_SRCROOT}/../..\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\"",
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/React-Core\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/react/runtime\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\"",
     "USE_HEADERMAP": "YES",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "GCC_WARN_PEDANTIC": "YES"
@@ -45,5 +45,6 @@
     "React-Fabric": [],
     "hermes-engine": [],
     "React-jsinspector": []
-  }
+  },
+  "header_mappings_dir": "packages/react-native/ReactCommon/react/runtime"
 }

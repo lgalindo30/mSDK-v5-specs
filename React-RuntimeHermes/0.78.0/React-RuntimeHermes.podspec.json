@@ -12,10 +12,10 @@
     "git": "https://github.com/facebook/react-native.git",
     "tag": "v0.78.0"
   },
-  "source_files": "hermes/*.{cpp,h}",
+  "source_files": "packages/react-native/ReactCommon/react/runtime/hermes/*.{cpp,h}",
   "header_dir": "react/runtime/hermes",
   "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"${PODS_TARGET_SRCROOT}/../..\" \"${PODS_TARGET_SRCROOT}/../../hermes/executor\" \"$(PODS_ROOT)/boost\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\"",
+    "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/react/runtime\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/hermes/executor\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/boost\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\"",
     "USE_HEADERMAP": "YES",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
     "GCC_WARN_PEDANTIC": "YES"
@@ -33,5 +33,6 @@
     "React-jsinspector": [],
     "React-hermes": [],
     "hermes-engine": []
-  }
+  },
+  "header_mappings_dir": "packages/react-native/ReactCommon/react/runtime/hermes"
 }

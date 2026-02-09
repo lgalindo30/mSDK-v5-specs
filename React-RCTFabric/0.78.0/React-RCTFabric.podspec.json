@@ -12,16 +12,11 @@
     "git": "https://github.com/facebook/react-native.git",
     "tag": "v0.78.0"
   },
-  "source_files": [
-    "packages/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}",
-    "RCTFabricComponentsPlugins.h",
-    "RCTViewComponentView.h"
-  ],
+  "source_files": "packages/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation -DRCT_NEW_ARCH_ENABLED=1",
   "exclude_files": [
     "**/tests/*",
-    "**/android/*",
-    "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation -DRCT_NEW_ARCH_ENABLED=1"
+    "**/android/*"
   ],
   "header_dir": "React",
   "module_name": "RCTFabric",
@@ -30,8 +25,7 @@
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fast_float/include\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/React-Core\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_ROOT)/Headers/Public/ReactCodegen\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/imagemanager/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers/react/renderer/textlayoutmanager/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers/react/renderer/components/textinput/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-ImageManager/React_ImageManager.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflags/React_featureflags.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-utils/React_utils.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-performancetimeline/React_performancetimeline.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererconsistency/React_rendererconsistency.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-runtimescheduler/React_runtimescheduler.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspectortracing/jsinspector_moderntracing.framework/Headers\"",
     "OTHER_CFLAGS": "$(inherited) -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -DRCT_NEW_ARCH_ENABLED=1",
-    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
-    "PUBLIC_HEADERS_FOLDER_PATH": "RCTFabric.framework/Headers/React"
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20"
   },
   "dependencies": {
     "React-Core": [],
@@ -67,17 +61,5 @@
       "frameworks": "XCTest"
     }
   ],
-  "public_header_files": [
-    "packages/react-native/React/Fabric/**/*.h",
-    "RCTFabricComponentsPlugins.h",
-    "RCTViewComponentView.h"
-  ],
-  "prepare_command": "SRC=\"packages/react-native/React/Fabric/Mounting/ComponentViews/RCTFabricComponentsPlugins.h\" && DST=\"RCTFabricComponentsPlugins.h\" && if [ -f \"$SRC\" ]; then cp -f \"$SRC\" \"$DST\"; fi && SRC_VIEW=\"packages/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h\" && DST_VIEW=\"RCTViewComponentView.h\" && if [ -f \"$SRC_VIEW\" ]; then cp -f \"$SRC_VIEW\" \"$DST_VIEW\"; fi && PUBLIC_HEADERS=\"../Headers/Public/React\" && mkdir -p \"$PUBLIC_HEADERS\" && if [ -f \"$DST\" ]; then cp -f \"$DST\" \"$PUBLIC_HEADERS/RCTFabricComponentsPlugins.h\"; fi && if [ -f \"$DST_VIEW\" ]; then cp -f \"$DST_VIEW\" \"$PUBLIC_HEADERS/RCTViewComponentView.h\"; fi",
-  "script_phases": [
-    {
-      "name": "Copy React Fabric public headers",
-      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFabric/packages/react-native/React/Fabric/Mounting/ComponentViews\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/React\"\nmkdir -p \"$DST_ROOT\"\nif [ -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" ]; then cp -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" \"$DST_ROOT/RCTFabricComponentsPlugins.h\"; fi\nif [ -f \"$SRC_ROOT/View/RCTViewComponentView.h\" ]; then cp -f \"$SRC_ROOT/View/RCTViewComponentView.h\" \"$DST_ROOT/RCTViewComponentView.h\"; fi\nFOLLY_SRC=\"${PODS_ROOT}/React-Core/packages/react-native/React/CxxUtils\"\nif [ -f \"$FOLLY_SRC/RCTFollyConvert.h\" ]; then cp -f \"$FOLLY_SRC/RCTFollyConvert.h\" \"$DST_ROOT/RCTFollyConvert.h\"; fi",
-      "execution_position": "before_compile"
-    }
-  ]
+  "header_mappings_dir": "packages/react-native/React"
 }
