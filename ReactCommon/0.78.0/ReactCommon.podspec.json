@@ -68,8 +68,7 @@
           "header_dir": "react/bridging",
           "pod_target_xcconfig": {
             "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_CONFIGURATION_BUILD_DIR)/React-utils/React_utils.framework/Headers\""
-          },
-          "header_mappings_dir": "packages/react-native/ReactCommon"
+          }
         },
         {
           "name": "core",
@@ -87,8 +86,7 @@
             "React-utils": [
               "0.78.0"
             ]
-          },
-          "header_mappings_dir": "packages/react-native/ReactCommon"
+          }
         }
       ]
     }
