@@ -320,5 +320,12 @@
       }
     }
   ],
-  "prepare_command": "SRC=\"packages/react-native/ReactCommon/react/renderer/components/view/platform/cxx/react/renderer/components/view\" && DST=\"packages/react-native/ReactCommon/react/renderer/components/view\" && mkdir -p \"$DST\" && if [ -d \"$SRC\" ]; then cp -f \"$SRC\"/HostPlatform*.h \"$DST\"/; fi"
+  "prepare_command": "SRC=\"packages/react-native/ReactCommon/react/renderer/components/view/platform/cxx/react/renderer/components/view\" && DST=\"packages/react-native/ReactCommon/react/renderer/components/view\" && mkdir -p \"$DST\" && if [ -d \"$SRC\" ]; then cp -f \"$SRC\"/HostPlatform*.h \"$DST\"/; fi",
+  "script_phases": [
+    {
+      "name": "Copy React CxxUtils public headers",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-Core/React/CxxUtils\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/React\"\nmkdir -p \"$DST_ROOT\"\nif [ -f \"$SRC_ROOT/RCTFollyConvert.h\" ]; then cp -f \"$SRC_ROOT/RCTFollyConvert.h\" \"$DST_ROOT/RCTFollyConvert.h\"; fi",
+      "execution_position": "before_compile"
+    }
+  ]
 }
