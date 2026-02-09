@@ -12,7 +12,7 @@
     "git": "https://github.com/facebook/react-native.git",
     "tag": "v0.78.0"
   },
-  "source_files": "React/FBReactNativeSpec/FBReactNativeSpec/**/*.{c,h,m,mm,S,cpp}",
+  "source_files": "packages/react-native/React/FBReactNativeSpec/FBReactNativeSpec/**/*.{c,h,m,mm,S,cpp}",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation -DRCT_NEW_ARCH_ENABLED=1",
   "header_dir": "FBReactNativeSpec",
   "module_name": "FBReactNativeSpec",
@@ -32,12 +32,12 @@
     "ReactCommon": [],
     "hermes-engine": []
   },
-  "public_header_files": "React/FBReactNativeSpec/FBReactNativeSpec/**/*.h",
-  "header_mappings_dir": "React/FBReactNativeSpec",
+  "public_header_files": "packages/react-native/React/FBReactNativeSpec/FBReactNativeSpec/**/*.h",
+  "header_mappings_dir": "packages/react-native/React/FBReactNativeSpec",
   "script_phases": [
     {
       "name": "Copy FBReactNativeSpec public headers",
-      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFBReactNativeSpec/React/FBReactNativeSpec/FBReactNativeSpec\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"\nmkdir -p \"$DST_ROOT\"\nif [ -d \"$SRC_ROOT\" ]; then cp -f \"$SRC_ROOT\"/*.h \"$DST_ROOT\"/; fi",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFBReactNativeSpec/packages/react-native/React/FBReactNativeSpec/FBReactNativeSpec\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"\nmkdir -p \"$DST_ROOT\"\nif [ -d \"$SRC_ROOT\" ]; then cp -f \"$SRC_ROOT\"/*.h \"$DST_ROOT\"/; fi",
       "execution_position": "before_compile"
     }
   ]
