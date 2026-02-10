@@ -35,5 +35,5 @@
     "React-debug": [],
     "hermes-engine": []
   },
-  "header_mappings_dir": "packages/react-native/ReactCommon"
+  "header_mappings_dir": "packages/react-native/ReactCommon/jserrorhandler"
 }
