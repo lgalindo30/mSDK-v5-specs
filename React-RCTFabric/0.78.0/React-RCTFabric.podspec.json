@@ -15,8 +15,8 @@
   "source_files": "packages/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation -DRCT_NEW_ARCH_ENABLED=1",
   "exclude_files": [
-    "**/tests/*",
-    "**/android/*"
+    "packages/react-native/React/Fabric/**/tests/*",
+    "packages/react-native/React/Fabric/**/android/*"
   ],
   "header_dir": "React",
   "module_name": "RCTFabric",
@@ -53,13 +53,5 @@
     "React-jsinspectortracing": [],
     "hermes-engine": []
   },
-  "testspecs": [
-    {
-      "name": "Tests",
-      "test_type": "unit",
-      "source_files": "Tests/**/*.{mm}",
-      "frameworks": "XCTest"
-    }
-  ],
   "header_mappings_dir": "packages/react-native/React"
 }
