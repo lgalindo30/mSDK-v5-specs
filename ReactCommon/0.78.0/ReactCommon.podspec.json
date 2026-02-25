@@ -90,6 +90,5 @@
         }
       ]
     }
-  ],
-  "header_mappings_dir": "packages/react-native/ReactCommon"
+  ]
 }

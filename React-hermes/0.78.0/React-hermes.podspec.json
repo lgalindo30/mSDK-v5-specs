@@ -23,6 +23,7 @@
     "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/React-RuntimeHermes\" \"${PODS_ROOT}/hermes-engine/destroot/include\" \"$(PODS_TARGET_SRCROOT)/..\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/hermes\" \"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\"",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20"
   },
+  "header_dir": "reacthermes",
   "dependencies": {
     "React-cxxreact": [
       "0.78.0"
@@ -48,9 +49,5 @@
     "hermes-engine": [],
     "React-jsi": [],
     "React-runtimeexecutor": []
-  },
-  "module_name": "React_hermes",
-  "static_framework": true,
-  "prepare_command": "mkdir -p reacthermes && cp packages/react-native/ReactCommon/hermes/executor/HermesExecutorFactory.h reacthermes/HermesExecutorFactory.h",
-  "header_dir": "reacthermes"
+  }
 }

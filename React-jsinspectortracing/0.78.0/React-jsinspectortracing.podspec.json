@@ -26,10 +26,10 @@
       "2024.11.18.00"
     ]
   },
+  "public_header_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{h}",
   "module_name": "jsinspector_moderntracing",
   "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern/tracing",
   "static_framework": true,
-  "public_header_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{h}",
   "script_phases": [
     {
       "name": "Copy jsinspector-modern tracing headers",

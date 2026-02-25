@@ -35,6 +35,5 @@
     "React-jsinspector": [],
     "React-hermes": [],
     "hermes-engine": []
-  },
-  "header_mappings_dir": "packages/react-native/ReactCommon/react/runtime/hermes"
+  }
 }

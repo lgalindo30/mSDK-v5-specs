@@ -10,21 +10,14 @@
   },
   "source": {
     "git": "https://github.com/Paciolan/mSDK-v5-pod.git",
-    "tag": "5.105.2602243944940"
+    "tag": "5.105.2602253949357"
   },
+  "source_files": "PaciolanSDK/Assets/react/renderer/components/rncore/**/*.{h,mm,cpp}",
   "pod_target_xcconfig": {
     "USE_HEADERMAP": "YES",
     "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/PaciolanSDK/Assets\" \"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fast_float/include\" \"$(PODS_ROOT)/fmt/include\" \"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core\" \"$(PODS_ROOT)/Headers/Private/React-Fabric\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\"",
     "CLANG_CXX_LANGUAGE_STANDARD": "c++20"
   },
-  "script_phases": [
-    {
-      "name": "Copy files",
-      "script": "mkdir -p \"${PODS_ROOT}/Headers/Public/React-FabricComponents/react/renderer/components/rncore\" && mkdir -p \"${PODS_ROOT}/Headers/Private/React-FabricComponents/react/renderer/components/rncore\" && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -print && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -exec cp {} \"${PODS_ROOT}/Headers/Public/React-FabricComponents/react/renderer/components/rncore/\" \\; && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -print && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -exec cp {} \"${PODS_ROOT}/Headers/Private/React-FabricComponents/react/renderer/components/rncore/\" \\; &&  mkdir -p \"${PODS_ROOT}/React-FabricComponents/packages/react-native/ReactCommon/react/renderer/components/rncore\" && cp -R \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" \"${PODS_ROOT}/React-FabricComponents/packages/react-native/ReactCommon/react/renderer/components\"",
-      "execution_position": "before_compile"
-    }
-  ],
-  "source_files": "PaciolanSDK/Assets/react/renderer/components/rncore/**/*.{h,mm,cpp}",
   "public_header_files": "PaciolanSDK/Assets/react/renderer/components/rncore/**/*.h",
   "header_dir": "react/renderer/components/rncore",
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
@@ -47,5 +40,12 @@
     "fmt": [
       "11.0.2"
     ]
-  }
+  },
+  "script_phases": [
+    {
+      "name": "Copy files",
+      "script": "mkdir -p \"${PODS_ROOT}/Headers/Public/React-FabricComponents/react/renderer/components/rncore\" && mkdir -p \"${PODS_ROOT}/Headers/Private/React-FabricComponents/react/renderer/components/rncore\" && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -print && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -exec cp {} \"${PODS_ROOT}/Headers/Public/React-FabricComponents/react/renderer/components/rncore/\" \\; && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -print && find \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" -name \"*.h\" -exec cp {} \"${PODS_ROOT}/Headers/Private/React-FabricComponents/react/renderer/components/rncore/\" \\; &&  mkdir -p \"${PODS_ROOT}/React-FabricComponents/packages/react-native/ReactCommon/react/renderer/components/rncore\" && cp -R \"${PODS_TARGET_SRCROOT}/PaciolanSDK/Assets/react/renderer/components/rncore\" \"${PODS_ROOT}/React-FabricComponents/packages/react-native/ReactCommon/react/renderer/components\"",
+      "execution_position": "before_compile"
+    }
+  ]
 }

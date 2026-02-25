@@ -45,6 +45,5 @@
     "hermes-engine": [],
     "React-RuntimeHermes": []
   },
-  "exclude_files": "packages/react-native/ReactCommon/react/runtime/platform/ios/ReactCommon/RCTJscInstance.{mm,h}",
-  "header_mappings_dir": "packages/react-native/ReactCommon/react/runtime/platform/ios"
+  "exclude_files": "packages/react-native/ReactCommon/react/runtime/platform/ios/ReactCommon/RCTJscInstance.{mm,h}"
 }

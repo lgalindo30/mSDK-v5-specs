@@ -52,6 +52,5 @@
     "React-jsinspector": [],
     "React-jsinspectortracing": [],
     "hermes-engine": []
-  },
-  "header_mappings_dir": "packages/react-native/React"
+  }
 }
