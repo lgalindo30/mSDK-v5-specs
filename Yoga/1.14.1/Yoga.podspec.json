@@ -1,0 +1,82 @@
+{
+  "name": "Yoga",
+  "version": "1.14.1",
+  "license": {
+    "type": "MIT"
+  },
+  "homepage": "https://yogalayout.com",
+  "documentation_url": "https://yogalayout.com/docs/",
+  "summary": "Yoga is a cross-platform layout engine which implements Flexbox.",
+  "description": "Yoga is a cross-platform layout engine enabling maximum collaboration within your team by implementing an API many designers are familiar with, and opening it up to developers across different platforms.",
+  "authors": "Facebook",
+  "source": {
+    "git": "https://github.com/facebook/react-native.git",
+    "tag": "v0.73.4"
+  },
+  "module_name": "Yoga",
+  "header_dir": "Yoga",
+  "requires_arc": false,
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "compiler_flags": [
+    "-fno-omit-frame-pointer",
+    "-fexceptions",
+    "-Wall",
+    "-Werror",
+    "-std=c++20",
+    "-fPIC"
+  ],
+  "platforms": {
+    "ios": "13.4"
+  },
+  "source_files": "packages/react-native/ReactCommon/yoga/yoga/**/*.{cpp,h}",
+  "header_mappings_dir": "packages/react-native/ReactCommon/yoga/yoga",
+  "public_header_files": "packages/react-native/ReactCommon/yoga/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h",
+  "private_header_files": [
+    "packages/react-native/ReactCommon/yoga/yoga/Yoga-internal.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/Align.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/Baseline.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/BoundAxis.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/Cache.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/CalculateLayout.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/FlexDirection.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/FlexLine.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/PixelGrid.h",
+    "packages/react-native/ReactCommon/yoga/yoga/algorithm/ResolveValue.h",
+    "packages/react-native/ReactCommon/yoga/yoga/bits/BitCast.h",
+    "packages/react-native/ReactCommon/yoga/yoga/bits/NumericBitfield.h",
+    "packages/react-native/ReactCommon/yoga/yoga/config/Config.h",
+    "packages/react-native/ReactCommon/yoga/yoga/debug/AssertFatal.h",
+    "packages/react-native/ReactCommon/yoga/yoga/debug/Log.h",
+    "packages/react-native/ReactCommon/yoga/yoga/debug/NodeToString.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Align.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Dimension.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Direction.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Display.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Edge.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Errata.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/ExperimentalFeature.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/FlexDirection.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Gutter.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Justify.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/LogLevel.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/MeasureMode.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/NodeType.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Overflow.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/PositionType.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/PrintOptions.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Unit.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/Wrap.h",
+    "packages/react-native/ReactCommon/yoga/yoga/enums/YogaEnums.h",
+    "packages/react-native/ReactCommon/yoga/yoga/event/event.h",
+    "packages/react-native/ReactCommon/yoga/yoga/node/CachedMeasurement.h",
+    "packages/react-native/ReactCommon/yoga/yoga/node/LayoutResults.h",
+    "packages/react-native/ReactCommon/yoga/yoga/node/Node.h",
+    "packages/react-native/ReactCommon/yoga/yoga/numeric/Comparison.h",
+    "packages/react-native/ReactCommon/yoga/yoga/numeric/FloatOptional.h",
+    "packages/react-native/ReactCommon/yoga/yoga/style/CompactValue.h",
+    "packages/react-native/ReactCommon/yoga/yoga/style/Style.h"
+  ],
+  "preserve_paths": ["packages/react-native/ReactCommon/yoga/yoga/**/*.h"]
+}

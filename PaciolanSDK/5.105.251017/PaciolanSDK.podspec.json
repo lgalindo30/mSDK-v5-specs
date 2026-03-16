@@ -1,0 +1,196 @@
+{
+  "name": "PaciolanSDK",
+  "version": "5.105.251017",
+  "summary": "Pod Component for Paciolan Mobile SDK",
+  "description": "This pod allows us to install the Paciolan react native SDK ViewController into an iOS app.",
+  "homepage": "https://github.com/Paciolan/mSDK-v5-pod",
+  "license": {
+    "type": "No License"
+  },
+  "authors": {
+    "Paciolan Mobile Team": "pacmobile@paciolan.com"
+  },
+  "source": {
+    "git": "https://github.com/Paciolan/mSDK-v5-pod.git",
+    "tag": "5.105.251017"
+  },
+  "source_files": "PaciolanSDK/Classes/**/*.{h,m,swift}",
+  "resources": "PaciolanSDK/Assets/{PaciolanSDK.js,assets}",
+  "ios": {
+    "resource_bundles": {
+      "PaciolanSDK": [
+        "PaciolanSDK/Assets/{PaciolanSDK.js,assets}"
+      ]
+    }
+  },
+  "platforms": {
+    "ios": "15.5"
+  },
+  "dependencies": {
+    "React": [
+      "0.75.3"
+    ],
+    "React-Core": [
+      "0.75.3"
+    ],
+    "React-CoreModules": [
+      "0.75.3"
+    ],
+    "React-RCTActionSheet": [
+      "0.75.3"
+    ],
+    "React-RCTAnimation": [
+      "0.75.3"
+    ],
+    "React-RCTBlob": [
+      "0.75.3"
+    ],
+    "React-RCTImage": [
+      "0.75.3"
+    ],
+    "React-RCTLinking": [
+      "0.75.3"
+    ],
+    "React-RCTNetwork": [
+      "0.75.3"
+    ],
+    "React-RCTSettings": [
+      "0.75.3"
+    ],
+    "React-RCTText": [
+      "0.75.3"
+    ],
+    "React-RCTVibration": [
+      "0.75.3"
+    ],
+    "React-rncore": [
+      "0.75.3"
+    ],
+    "React-nativeconfig": [
+      "0.75.3"
+    ],
+    "React-FabricComponents": [
+      "0.75.3"
+    ],
+    "React-cxxreact": [
+      "0.75.3"
+    ],
+    "React-jsi": [
+      "0.75.3"
+    ],
+    "React-jsiexecutor": [
+      "0.75.3"
+    ],
+    "RCTTypeSafety": [
+      "0.75.3"
+    ],
+    "ReactCommon": [
+      "0.75.3"
+    ],
+    "Yoga": [
+      "0.0.0"
+    ],
+    "React-graphics": [
+      "0.75.3"
+    ],
+    "React-featureflags": [
+      "0.75.3"
+    ],
+    "React-rendererconsistency": [
+      "0.75.3"
+    ],
+    "RCTDeprecation": [
+      "0.75.3"
+    ],
+    "FBLazyVector": [
+      "0.75.3"
+    ],
+    "React-jsinspector": [
+      "0.75.3"
+    ],
+    "React-callinvoker": [
+      "0.75.3"
+    ],
+    "React-perflogger": [
+      "0.75.3"
+    ],
+    "React-runtimeexecutor": [
+      "0.75.3"
+    ],
+    "React-logger": [
+      "0.75.3"
+    ],
+    "React-debug": [
+      "0.75.3"
+    ],
+    "React-utils": [
+      "0.75.3"
+    ],
+    "React-runtimescheduler": [
+      "0.75.3"
+    ],
+    "React-jsc": [
+      "0.75.3"
+    ],
+    "React-NativeModulesApple": [
+      "0.75.3"
+    ],
+    "React-rendererdebug": [
+      "0.75.3"
+    ],
+    "DoubleConversion": [
+      "1.1.6"
+    ],
+    "RCT-Folly": [
+      "2024.01.01.00"
+    ],
+    "glog": [
+      "0.3.5"
+    ],
+    "boost": [
+      "1.84.0"
+    ],
+    "fmt": [
+      "9.1.0"
+    ],
+    "react-native-encrypted-storage": [
+      "4.0.3"
+    ],
+    "RNCMaskedView": [
+      "0.3.1"
+    ],
+    "RNGestureHandler": [
+      "2.21.2"
+    ],
+    "react-native-safe-area-context": [
+      "4.11.0"
+    ],
+    "react-native-webview": [
+      "13.12.4"
+    ],
+    "CodePush": [
+      "9.0.1"
+    ],
+    "RNSentry": [
+      "7.3.0"
+    ],
+    "RNCPushNotificationIOS": [
+      "1.11.0"
+    ],
+    "react-native-select-contact": [
+      "1.6.3"
+    ],
+    "RNFBApp": [
+      "19.3.0"
+    ],
+    "RNFBMessaging": [
+      "19.3.0"
+    ],
+    "react-native-wallet-manager": [
+      "0.0.7"
+    ],
+    "Sentry": [
+      "8.56.2"
+    ]
+  }
+}
