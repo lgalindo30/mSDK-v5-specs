@@ -1,0 +1,80 @@
+{
+  "name": "RNGestureHandler",
+  "version": "5.105.2603174034965",
+  "summary": "Declarative API exposing native platform touch and gesture system to React Native",
+  "homepage": "https://github.com/software-mansion/react-native-gesture-handler",
+  "license": "MIT",
+  "authors": {
+    "Krzysztof Magiera": "krzys.magiera@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/software-mansion/react-native-gesture-handler",
+    "tag": "v2.29.1"
+  },
+  "source_files": "packages/react-native-gesture-handler/apple/**/*.{h,m,mm}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "11.0",
+    "tvos": "11.0",
+    "osx": "10.15",
+    "visionos": "1.0"
+  },
+  "xcconfig": {
+    "OTHER_CFLAGS": "$(inherited)  -DREACT_NATIVE_MINOR_VERSION=78"
+  },
+  "compiler_flags": "-DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+  "dependencies": {
+    "React-Core": [
+      "5.105.2603174034965"
+    ],
+    "RCT-Folly": [
+      "2024.11.18.00"
+    ],
+    "glog": [],
+    "React-RCTFabric": [
+      "5.105.2603174034965"
+    ],
+    "ReactCodegen": [
+      "5.105.2603174034965"
+    ],
+    "RCTRequired": [],
+    "RCTTypeSafety": [
+      "5.105.2603174034965"
+    ],
+    "ReactCommon/turbomodule/bridging": [
+      "5.105.2603174034965"
+    ],
+    "ReactCommon/turbomodule/core": [
+      "5.105.2603174034965"
+    ],
+    "React-NativeModulesApple": [
+      "5.105.2603174034965"
+    ],
+    "Yoga": [],
+    "React-Fabric": [
+      "5.105.2603174034965"
+    ],
+    "React-graphics": [
+      "5.105.2603174034965"
+    ],
+    "React-utils": [
+      "5.105.2603174034965"
+    ],
+    "React-featureflags": [],
+    "React-debug": [],
+    "React-ImageManager": [
+      "5.105.2603174034965"
+    ],
+    "React-rendererdebug": [],
+    "DoubleConversion": [],
+    "hermes-engine": [
+      "5.105.2603174034965"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/Yoga\"",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
+  }
+}
