@@ -1,0 +1,78 @@
+{
+  "name": "ReactCodegen",
+  "version": "5.105.2603174034771",
+  "summary": "Temp pod for generated files for React Native",
+  "homepage": "https://facebook.com/",
+  "license": "Unlicense",
+  "authors": "Facebook",
+  "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation -Wno-nullability-completeness -std=c++20",
+  "source": {
+    "git": "https://github.com/Paciolan/mSDK-v5-pod.git",
+    "tag": "5.105.2603174034771"
+  },
+  "header_mappings_dir": "PaciolanSDK/Assets/Codegen",
+  "platforms": {
+    "ios": "15.1"
+  },
+  "source_files": "PaciolanSDK/Assets/Codegen/**/*.{h,mm,cpp}",
+  "exclude_files": [
+    "RCTAppDependencyProvider.{h,mm}",
+    "PaciolanSDK/Assets/Codegen/FBReactNativeSpec/**/*.{h,mm,cpp}"
+  ],
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"${PODS_ROOT}/Headers/Public/ReactCodegen/react/renderer/components\" \"$(PODS_ROOT)/Headers/Private/React-Fabric\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_TARGET_SRCROOT)\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-utils/React_utils.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflags/React_featureflags.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers\" ",
+    "FRAMEWORK_SEARCH_PATHS": [],
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"
+  },
+  "dependencies": {
+    "React-jsiexecutor": [
+      "5.105.2603174034771"
+    ],
+    "RCT-Folly": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [
+      "5.105.2603174034771"
+    ],
+    "React-Core": [
+      "5.105.2603174034771"
+    ],
+    "React-jsi": [
+      "5.105.2603174034771"
+    ],
+    "ReactCommon/turbomodule/bridging": [
+      "5.105.2603174034771"
+    ],
+    "ReactCommon/turbomodule/core": [
+      "5.105.2603174034771"
+    ],
+    "React-NativeModulesApple": [
+      "5.105.2603174034771"
+    ],
+    "glog": [],
+    "DoubleConversion": [],
+    "React-graphics": [
+      "5.105.2603174034771"
+    ],
+    "React-rendererdebug": [],
+    "React-Fabric": [
+      "5.105.2603174034771"
+    ],
+    "React-FabricImage": [
+      "5.105.2603174034771"
+    ],
+    "React-debug": [],
+    "React-utils": [
+      "5.105.2603174034771"
+    ],
+    "React-featureflags": [],
+    "React-RCTAppDelegate": [
+      "5.105.2603174034771"
+    ],
+    "hermes-engine": [
+      "5.105.2603174034771"
+    ],
+    "React-rncore": [
+      "5.105.2603174034771"
+    ]
+  }
+}
