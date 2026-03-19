@@ -57,7 +57,9 @@
     "React-jsc": [
       "5.2.1"
     ],
-    "React-jsinspectortracing": []
+    "React-jsinspectortracing": [
+      "5.2.1"
+    ]
   },
   "module_name": "React_runtimescheduler",
   "header_mappings_dir": "packages/react-native/ReactCommon/react/renderer/runtimescheduler"

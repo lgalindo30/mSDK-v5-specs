@@ -1,0 +1,40 @@
+{
+  "name": "React-jsinspectortracing",
+  "version": "5.3.0",
+  "summary": "Experimental performance tooling for React Native DevTools",
+  "homepage": "https://reactnative.dev/",
+  "license": "MIT",
+  "authors": "Meta Platforms, Inc. and its affiliates",
+  "platforms": {
+    "ios": "13.4"
+  },
+  "source": {
+    "git": "https://github.com/facebook/react-native.git",
+    "tag": "v0.75.3"
+  },
+  "source_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{cpp,h}",
+  "public_header_files": "packages/react-native/ReactCommon/jsinspector-modern/tracing/*.{h}",
+  "header_dir": "jsinspector-modern/tracing",
+  "module_name": "jsinspector_moderntracing",
+  "header_mappings_dir": "packages/react-native/ReactCommon/jsinspector-modern/tracing",
+  "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_TARGET_SRCROOT)/packages/react-native/ReactCommon/jsinspector-modern/tracing\"",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "DEFINES_MODULE": "YES",
+    "PUBLIC_HEADERS_FOLDER_PATH": "jsinspector_moderntracing.framework/Headers/jsinspector-modern/tracing"
+  },
+  "script_phases": [
+    {
+      "name": "Copy jsinspector-modern tracing headers",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-jsinspectortracing/packages/react-native/ReactCommon/jsinspector-modern/tracing\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/jsinspector-modern/tracing\"\nmkdir -p \"$DST_ROOT\"\nif [ -d \"$SRC_ROOT\" ]; then cp -f \"$SRC_ROOT\"/*.h \"$DST_ROOT\"/; fi",
+      "execution_position": "before_compile"
+    }
+  ],
+  "dependencies": {
+    "RCT-Folly": [
+      "5.3.0"
+    ]
+  }
+}
