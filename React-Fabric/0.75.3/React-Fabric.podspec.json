@@ -20,7 +20,9 @@
     "HEADER_SEARCH_PATHS": "\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig/react/config\" \"$(PODS_ROOT)/Headers/Public/React-nativeconfig\" \"$(PODS_ROOT)/Headers/Public/React-FabricImage\" \"$(PODS_ROOT)/Headers/Public/React-FabricImage/react/renderer/components/image\" \"$(PODS_ROOT)/Headers/Private/React-FabricComponents/react/renderer/components\" \"$(PODS_ROOT)/Headers/Private/React-FabricComponents/react/renderer/textlayoutmanager/packages/react-native/ReactCommon\" \"$(PODS_ROOT)/Headers/Private/React-FabricComponents\" \"$(PODS_ROOT)/React-FabricComponents/packages/react-native/ReactCommon/react/renderer/components/rncore\""
   },
   "dependencies": {
-    "RCT-Folly/Fabric": ["2024.01.01.00"],
+    "RCT-Folly/Fabric": [
+      "2024.01.01.00"
+    ],
     "React-jsiexecutor": [],
     "RCTRequired": [],
     "RCTTypeSafety": [],
@@ -29,7 +31,9 @@
     "React-logger": [],
     "glog": [],
     "DoubleConversion": [],
-    "fmt": ["9.1.0"],
+    "fmt": [
+      "9.1.0"
+    ],
     "React-Core": [],
     "React-debug": [],
     "React-featureflags": [],
@@ -40,12 +44,13 @@
     "React-graphics": [],
     "React-jsc": []
   },
-
   "subspecs": [
     {
       "name": "animations",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/animations/**/*.{m,mm,cpp,h}",
@@ -55,7 +60,9 @@
     {
       "name": "attributedstring",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/attributedstring/**/*.{m,mm,cpp,h}",
@@ -65,20 +72,24 @@
     {
       "name": "core",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation",
       "source_files": "packages/react-native/ReactCommon/react/renderer/core/**/*.{m,mm,cpp,h}",
       "exclude_files": "packages/react-native/ReactCommon/react/renderer/core/tests",
       "header_dir": "react/renderer/core",
       "pod_target_xcconfig": {
-        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_TARGET_SRCROOT)\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/Headers/Public/React-debug\" \"$(PODS_ROOT)/Headers/Private/React-debug\" \"$(PODS_ROOT)/Public/React-rendererdebug/packages/react-native/ReactCommon\"\"$(PODS_ROOT)/Public/React-rendererdebug\" "
+        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_TARGET_SRCROOT)\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/Headers/Public/React-debug\" \"$(PODS_ROOT)/Headers/Private/React-debug\" \"$(PODS_ROOT)/Headers/Public/React-rendererdebug\" \"$(PODS_ROOT)/Headers/Private/React-rendererdebug\" "
       }
     },
     {
       "name": "componentregistry",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/componentregistry/*.{m,mm,cpp,h}",
@@ -87,7 +98,9 @@
     {
       "name": "componentregistrynative",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/componentregistry/native/**/*.{m,mm,cpp,h}",
@@ -99,7 +112,9 @@
         {
           "name": "root",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"]
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ]
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
           "source_files": "packages/react-native/ReactCommon/react/renderer/components/root/**/*.{m,mm,cpp,h}",
@@ -109,7 +124,9 @@
         {
           "name": "view",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"],
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ],
             "Yoga": []
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
@@ -127,7 +144,9 @@
         {
           "name": "legacyviewmanagerinterop",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"]
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ]
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
           "source_files": "packages/react-native/ReactCommon/react/renderer/components/legacyviewmanagerinterop/**/*.{m,mm,cpp,h}",
@@ -142,7 +161,9 @@
     {
       "name": "dom",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"],
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ],
         "React-graphics": []
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
@@ -153,7 +174,9 @@
     {
       "name": "scheduler",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"],
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ],
         "React-performancetimeline": [],
         "React-Fabric/observers/events": []
       },
@@ -164,7 +187,9 @@
     {
       "name": "imagemanager",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/imagemanager/*.{m,mm,cpp,h}",
@@ -173,7 +198,9 @@
     {
       "name": "mounting",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/mounting/*.{m,mm,cpp,h}",
@@ -183,7 +210,9 @@
         {
           "name": "stubs",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"]
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ]
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
           "source_files": "packages/react-native/ReactCommon/react/renderer/mounting/stubs/*.{m,mm,cpp,h}",
@@ -197,7 +226,9 @@
         {
           "name": "events",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"]
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ]
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
           "source_files": "packages/react-native/ReactCommon/react/renderer/observers/events/**/*.{m,mm,cpp,h}",
@@ -209,7 +240,9 @@
     {
       "name": "templateprocessor",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/templateprocessor/**/*.{m,mm,cpp,h}",
@@ -219,7 +252,9 @@
     {
       "name": "telemetry",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/telemetry/**/*.{m,mm,cpp,h}",
@@ -229,7 +264,9 @@
     {
       "name": "uimanager",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"],
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ],
         "React-rendererconsistency": []
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
@@ -239,7 +276,9 @@
         {
           "name": "consistency",
           "dependencies": {
-            "RCT-Folly/Fabric": ["2024.01.01.00"]
+            "RCT-Folly/Fabric": [
+              "2024.01.01.00"
+            ]
           },
           "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
           "source_files": "packages/react-native/ReactCommon/react/renderer/uimanager/consistency/*.{m,mm,cpp,h}",
@@ -250,7 +289,9 @@
     {
       "name": "leakchecker",
       "dependencies": {
-        "RCT-Folly/Fabric": ["2024.01.01.00"]
+        "RCT-Folly/Fabric": [
+          "2024.01.01.00"
+        ]
       },
       "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
       "source_files": "packages/react-native/ReactCommon/react/renderer/leakchecker/**/*.{cpp,h}",
