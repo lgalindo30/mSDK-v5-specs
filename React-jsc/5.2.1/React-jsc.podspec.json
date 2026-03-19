@@ -1,0 +1,32 @@
+{
+  "name": "React-jsc",
+  "version": "5.2.1",
+  "summary": "JavaScriptCore engine for React Native",
+  "homepage": "https://reactnative.dev/",
+  "license": "MIT",
+  "authors": "Meta Platforms, Inc. and its affiliates",
+  "platforms": {
+    "ios": "13.4"
+  },
+  "source": {
+    "git": "https://github.com/facebook/react-native.git",
+    "tag": "v0.75.3"
+  },
+  "header_dir": "jsc",
+  "source_files": "packages/react-native/ReactCommon/jsc/JSCRuntime.{cpp,h}",
+  "exclude_files": "packages/react-native/ReactCommon/jsc/**/test/*",
+  "frameworks": "JavaScriptCore",
+  "dependencies": {
+    "React-jsi": [
+      "5.2.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Fabric",
+      "pod_target_xcconfig": {
+        "OTHER_CFLAGS": "$(inherited)"
+      }
+    }
+  ]
+}
