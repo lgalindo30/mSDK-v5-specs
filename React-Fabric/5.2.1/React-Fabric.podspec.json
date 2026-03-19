@@ -115,7 +115,7 @@
       "exclude_files": "packages/react-native/ReactCommon/react/renderer/core/tests",
       "header_dir": "react/renderer/core",
       "pod_target_xcconfig": {
-        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost \"  \"$(PODS_TARGET_SRCROOT)/ReactCommon \"  \"$(PODS_ROOT)/RCT-Folly \"  \"$(PODS_ROOT)/Headers/Private/Yoga \"  \"$(PODS_TARGET_SRCROOT) \"  \"$(PODS_ROOT)/DoubleConversion \"  \"$(PODS_ROOT)/fmt/include \"  \"$(PODS_ROOT)/Headers/Public/React-debug \"  \"$(PODS_ROOT)/Headers/Private/React-debug \"  \"$(PODS_ROOT)/Public/React-rendererdebug/packages/react-native/ReactCommon \" \"$(PODS_ROOT)/Public/React-rendererdebug \" "
+        "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"$(PODS_TARGET_SRCROOT)\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/fmt/include\" \"$(PODS_ROOT)/Headers/Public/React-debug\" \"$(PODS_ROOT)/Headers/Private/React-debug\" \"$(PODS_ROOT)/Public/React-rendererdebug/packages/react-native/ReactCommon\"\"$(PODS_ROOT)/Public/React-rendererdebug\" "
       }
     },
     {
@@ -216,7 +216,7 @@
           "5.2.1"
         ],
         "React-performancetimeline": [
-
+          "5.2.1"
         ],
         "React-Fabric/observers/events": [
           "5.2.1"
