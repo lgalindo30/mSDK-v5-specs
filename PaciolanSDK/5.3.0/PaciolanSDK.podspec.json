@@ -28,166 +28,166 @@
   },
   "dependencies": {
     "React": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-Core": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-CoreModules": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTActionSheet": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTAnimation": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTBlob": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTImage": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTLinking": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTNetwork": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTSettings": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTText": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-RCTVibration": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-rncore": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-nativeconfig": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-FabricComponents": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-cxxreact": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-jsi": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-jsiexecutor": [
-      "0.75.3"
+      "5.3.0"
     ],
     "RCTTypeSafety": [
-      "0.75.3"
+      "5.3.0"
     ],
     "ReactCommon": [
-      "0.75.3"
+      "5.3.0"
     ],
     "Yoga": [
-      "0.0.0"
+      "5.3.0"
     ],
     "React-graphics": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-featureflags": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-rendererconsistency": [
-      "0.75.3"
+      "5.3.0"
     ],
     "RCTDeprecation": [
-      "0.75.3"
+      "5.3.0"
     ],
     "FBLazyVector": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-jsinspector": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-callinvoker": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-perflogger": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-runtimeexecutor": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-logger": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-debug": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-utils": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-runtimescheduler": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-jsc": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-NativeModulesApple": [
-      "0.75.3"
+      "5.3.0"
     ],
     "React-rendererdebug": [
-      "0.75.3"
+      "5.3.0"
     ],
     "DoubleConversion": [
-      "1.1.6"
+      "5.3.0"
     ],
     "RCT-Folly": [
-      "2024.01.01.00"
+      "5.3.0"
     ],
     "glog": [
-      "0.3.5"
+      "5.3.0"
     ],
     "boost": [
-      "1.84.0"
+      "5.3.0"
     ],
     "fmt": [
-      "9.1.0"
+      "5.3.0"
     ],
     "react-native-encrypted-storage": [
-      "4.0.3"
+      "5.3.0"
     ],
     "RNCMaskedView": [
-      "0.3.1"
+      "5.3.0"
     ],
     "RNGestureHandler": [
-      "2.21.2"
+      "5.3.0"
     ],
     "react-native-safe-area-context": [
-      "4.11.0"
+      "5.3.0"
     ],
     "react-native-webview": [
-      "13.12.4"
+      "5.3.0"
     ],
     "CodePush": [
-      "9.0.1"
+      "5.3.0"
     ],
     "RNSentry": [
-      "7.3.0"
+      "5.3.0"
     ],
     "RNCPushNotificationIOS": [
-      "1.11.0"
+      "5.3.0"
     ],
     "react-native-select-contact": [
-      "1.6.3"
+      "5.3.0"
     ],
     "RNFBApp": [
-      "19.3.0"
+      "5.3.0"
     ],
     "RNFBMessaging": [
-      "19.3.0"
+      "5.3.0"
     ],
     "react-native-wallet-manager": [
-      "0.0.7"
+      "5.3.0"
     ],
     "Sentry": [
       "8.56.2"

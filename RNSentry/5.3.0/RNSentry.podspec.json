@@ -1,0 +1,87 @@
+{
+  "name": "RNSentry",
+  "version": "5.3.0",
+  "license": "MIT",
+  "summary": "Official Sentry SDK for react-native",
+  "authors": "Sentry",
+  "homepage": "https://github.com/getsentry/sentry-react-native",
+  "source": {
+    "git": "https://github.com/getsentry/sentry-react-native.git",
+    "tag": "7.3.0"
+  },
+  "platforms": {
+    "ios": "11.0",
+    "osx": "10.13",
+    "tvos": "11.0",
+    "visionos": "1.0"
+  },
+  "preserve_paths": "*.js",
+  "source_files": "ios/**/*.{h,m,mm}",
+  "public_header_files": "ios/RNSentry.h",
+  "compiler_flags": "$(inherited) -DSENTRY_PROFILING_SUPPORTED=1",
+  "dependencies": {
+    "Sentry/HybridSDK": [
+      "8.56.2"
+    ],
+    "React-Core": [
+      "5.3.0"
+    ],
+    "RCT-Folly": [
+      "5.3.0"
+    ],
+    "glog": [
+      "5.3.0"
+    ],
+    "React-RCTFabric": [
+      "5.3.0"
+    ],
+    "ReactCodegen": [
+      "5.3.0"
+    ],
+    "RCTRequired": [
+      "5.3.0"
+    ],
+    "RCTTypeSafety": [
+      "5.3.0"
+    ],
+    "ReactCommon/turbomodule/bridging": [
+      "5.3.0"
+    ],
+    "ReactCommon/turbomodule/core": [
+      "5.3.0"
+    ],
+    "React-NativeModulesApple": [
+      "5.3.0"
+    ],
+    "Yoga": [
+      "5.3.0"
+    ],
+    "React-Fabric": [
+      "5.3.0"
+    ],
+    "React-graphics": [
+      "5.3.0"
+    ],
+    "React-utils": [
+      "5.3.0"
+    ],
+    "React-featureflags": [
+      "5.3.0"
+    ],
+    "React-debug": [
+      "5.3.0"
+    ],
+    "React-ImageManager": [
+      "5.3.0"
+    ],
+    "React-rendererdebug": [
+      "5.3.0"
+    ],
+    "DoubleConversion": [
+      "5.3.0"
+    ],
+    "React-jsi": [
+      "5.3.0"
+    ]
+  }
+}

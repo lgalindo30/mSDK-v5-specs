@@ -1,0 +1,93 @@
+{
+  "name": "react-native-safe-area-context",
+  "version": "5.3.0",
+  "summary": "A flexible way to handle safe area, also works on Android and web.",
+  "license": "MIT",
+  "authors": "Janic Duplessis <janicduplessis@gmail.com>",
+  "homepage": "https://github.com/th3rdwave/react-native-safe-area-context#readme",
+  "platforms": {
+    "ios": "12.4",
+    "tvos": "12.4",
+    "visionos": "1.0"
+  },
+  "source": {
+    "git": "https://github.com/th3rdwave/react-native-safe-area-context.git",
+    "tag": "v4.11.0"
+  },
+  "source_files": "ios/**/*.{h,m,mm}",
+  "exclude_files": "ios/Fabric",
+  "dependencies": {
+    "React-Core": [
+      "5.3.0"
+    ],
+    "RCT-Folly": [
+      "5.3.0"
+    ],
+    "glog": [
+      "5.3.0"
+    ],
+    "React-RCTFabric": [
+      "5.3.0"
+    ],
+    "ReactCodegen": [
+      "5.3.0"
+    ],
+    "RCTRequired": [
+      "5.3.0"
+    ],
+    "RCTTypeSafety": [
+      "5.3.0"
+    ],
+    "ReactCommon/turbomodule/bridging": [
+      "5.3.0"
+    ],
+    "ReactCommon/turbomodule/core": [
+      "5.3.0"
+    ],
+    "React-NativeModulesApple": [
+      "5.3.0"
+    ],
+    "Yoga": [
+      "5.3.0"
+    ],
+    "React-Fabric": [
+      "5.3.0"
+    ],
+    "React-graphics": [
+      "5.3.0"
+    ],
+    "React-utils": [
+      "5.3.0"
+    ],
+    "React-featureflags": [
+      "5.3.0"
+    ],
+    "React-debug": [
+      "5.3.0"
+    ],
+    "React-ImageManager": [
+      "5.3.0"
+    ],
+    "React-rendererdebug": [
+      "5.3.0"
+    ],
+    "DoubleConversion": [
+      "5.3.0"
+    ],
+    "hermes-engine": []
+  },
+  "compiler_flags": "-DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/Yoga\" \"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTFabric/RCTFabric.framework/Headers\"",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
+  },
+  "script_phases": [
+    {
+      "name": "Copy React Fabric public headers",
+      "script": "SRC_ROOT=\"${PODS_ROOT}/React-RCTFabric/packages/react-native/React/Fabric/Mounting/ComponentViews\"\nDST_ROOT=\"${PODS_ROOT}/Headers/Public/React\"\nmkdir -p \"$DST_ROOT\"\nif [ -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" ]; then cp -f \"$SRC_ROOT/RCTFabricComponentsPlugins.h\" \"$DST_ROOT/RCTFabricComponentsPlugins.h\"; fi\nif [ -f \"$SRC_ROOT/View/RCTViewComponentView.h\" ]; then cp -f \"$SRC_ROOT/View/RCTViewComponentView.h\" \"$DST_ROOT/RCTViewComponentView.h\"; fi",
+      "execution_position": "before_compile"
+    }
+  ]
+}
