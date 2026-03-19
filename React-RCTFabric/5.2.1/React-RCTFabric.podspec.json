@@ -79,7 +79,9 @@
     "React-utils": [
       "5.2.1"
     ],
-    "React-performancetimeline": [],
+    "React-performancetimeline": [
+      "5.2.1"
+    ],
     "React-rendererdebug": [
       "5.2.1"
     ],
