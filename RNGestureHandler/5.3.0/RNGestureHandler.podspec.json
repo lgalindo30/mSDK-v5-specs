@@ -9,9 +9,9 @@
   },
   "source": {
     "git": "https://github.com/software-mansion/react-native-gesture-handler",
-    "tag": "v2.21.2"
+    "tag": "2.21.2"
   },
-  "source_files": "packages/react-native-gesture-handler/apple/**/*.{h,m,mm}",
+  "source_files": "apple/**/*.{h,m,mm}",
   "requires_arc": true,
   "platforms": {
     "ios": "11.0",
@@ -25,67 +25,6 @@
   "dependencies": {
     "React-Core": [
       "5.3.0"
-    ],
-    "RCT-Folly": [
-      "5.3.0"
-    ],
-    "glog": [
-      "5.3.0"
-    ],
-    "React-RCTFabric": [
-      "5.3.0"
-    ],
-    "ReactCodegen": [
-      "5.3.0"
-    ],
-    "RCTRequired": [
-      "5.3.0"
-    ],
-    "RCTTypeSafety": [
-      "5.3.0"
-    ],
-    "ReactCommon/turbomodule/bridging": [
-      "5.3.0"
-    ],
-    "ReactCommon/turbomodule/core": [
-      "5.3.0"
-    ],
-    "React-NativeModulesApple": [
-      "5.3.0"
-    ],
-    "Yoga": [
-      "5.3.0"
-    ],
-    "React-Fabric": [
-      "5.3.0"
-    ],
-    "React-graphics": [
-      "5.3.0"
-    ],
-    "React-utils": [
-      "5.3.0"
-    ],
-    "React-featureflags": [
-      "5.3.0"
-    ],
-    "React-debug": [
-      "5.3.0"
-    ],
-    "React-ImageManager": [
-      "5.3.0"
-    ],
-    "React-rendererdebug": [
-      "5.3.0"
-    ],
-    "DoubleConversion": [
-      "5.3.0"
     ]
-  },
-  "compiler_flags": "-DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
-  "pod_target_xcconfig": {
-    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/Yoga\"",
-    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
-    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
-    "OTHER_SWIFT_FLAGS": "$(inherited) -DRCT_NEW_ARCH_ENABLED"
   }
 }
